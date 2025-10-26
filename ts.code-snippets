@@ -1,0 +1,71 @@
+// "Declaration Env": {
+// 	"body": "export {};\n\ndeclare global {\n\tnamespace NodeJS {\n\t\tinterface ProcessEnv {\n\t\t\tNODE_ENV: 'development' | 'production';\n\t\t}\n\t}\n}\n",
+// 	"prefix": "denv",
+// 	"scope": "typescript"
+// },
+{
+	"Interface": {
+		"body": "interface $1 {\n\t$2\n}\n",
+		"prefix": [
+			"i",
+			"interface"
+		],
+		"scope": "typescript,typescriptreact"
+	},
+	"Interface Export": {
+		"body": "export interface $1 {\n\t$2\n}\n",
+		"prefix": [
+			"ie",
+			"interface-export"
+		],
+		"scope": "typescript,typescriptreact"
+	},
+	"Props Interface": {
+		"body": "interface ${1:${TM_FILENAME_BASE/(?:^|[\\s._-]+)([a-zA-Z0-9])(?=[a-zA-Z0-9]*)/${1:/upcase}/g}}Props {\n\t$2\n}",
+		"prefix": [
+			"pi",
+			"props-interface"
+		],
+		"scope": "typescript,typescriptreact"
+	},
+	"Props Name": {
+		"body": "${1:${TM_FILENAME_BASE/(?:^|[\\s._-]+)([a-zA-Z0-9])(?=[a-zA-Z0-9]*)/${1:/upcase}/g}}Props",
+		"prefix": [
+			"pn",
+			"props-name"
+		],
+		"scope": "typescript,typescriptreact"
+	},
+	"Props Type": {
+		"body": "export type ${1:${TM_FILENAME_BASE/(?:^|[\\s._-]+)([a-zA-Z0-9])(?=[a-zA-Z0-9]*)/${1:/upcase}/g}}Props = $2",
+		"prefix": [
+			"pt",
+			"props-type"
+		],
+		"scope": "typescript,typescriptreact"
+	},
+	"Type": {
+		"body": "type $1 = $2",
+		"prefix": [
+			"t",
+			"type"
+		],
+		"scope": "typescript,typescriptreact"
+	},
+	"Type Export": {
+		"body": "export type $1 = $2",
+		"prefix": [
+			"te",
+			"type-export"
+		],
+		"scope": "typescript,typescriptreact"
+	},
+	"Props Destructure": {
+		"body": "{ $2 }: ${1:${TM_FILENAME_BASE/(?:^|[\\s._-]+)([a-zA-Z0-9])(?=[a-zA-Z0-9]*)/${1:/upcase}/g}}Props",
+		"prefix": [
+			"pd",
+			"props-destructure"
+		],
+		"scope": "typescript,typescriptreact"
+	},
+}

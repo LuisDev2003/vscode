@@ -1,0 +1,297 @@
+// {
+// 	"Animation - Blur": {
+// 		"body": [
+// 			"animation: blur linear both;",
+// 			"animation-timeline: scroll();",
+// 			"animation-range: 0 ${1:500px};"
+// 		],
+// 		"prefix": [
+// 			"-animation-blur",
+// 			"-ab"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Animation - Bounce": {
+// 		"body": "animation: bounce ${1:1}s infinite;$0",
+// 		"prefix": [
+// 			"-animation-bounce",
+// 			"-ab"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Animation - Ping": {
+// 		"body": "animation: ping ${1:1}s cubic-bezier(0, 0, 0.2, 1) infinite;$0",
+// 		"prefix": [
+// 			"-animation-ping",
+// 			"-ap"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Animation - Pulse": {
+// 		"body": "animation: pulse ${1:2}s cubic-bezier(0.4, 0, 0.6, 1) infinite;$0",
+// 		"prefix": [
+// 			"-animation-pulse",
+// 			"-ap"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Animation - Spin": {
+// 		"body": "animation: spin ${1:1}s linear infinite;$0",
+// 		"prefix": [
+// 			"-animation-spin",
+// 			"-as"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Child - Even": {
+// 		"body": ".${1:class}:nth-child(2n) {\n\t$0\n}\n",
+// 		"prefix": [
+// 			"-ce",
+// 			"-even"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Child - First": {
+// 		"body": ".${1:class}:first-child {\n\t$0\n}\n",
+// 		"prefix": [
+// 			"-cf",
+// 			"-first"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Child - Last": {
+// 		"body": ".${1:class}:last-child {\n\t$0\n}\n",
+// 		"prefix": [
+// 			"-cl",
+// 			"-last"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Child - N": {
+// 		"body": ".${1:class}:nth-child(${2:1}) {\n\t$0\n}\n",
+// 		"prefix": "-cn",
+// 		"scope": "css"
+// 	},
+// 	"Child - Odd": {
+// 		"body": ".${1:class}:nth-child(odd) {\n\t$0\n}\n",
+// 		"prefix": [
+// 			"-co",
+// 			"-odd"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Flex Between": {
+// 		"body": [
+// 			"display: flex;",
+// 			"align-items: center;",
+// 			"justify-content: space-between;$0"
+// 		],
+// 		"prefix": [
+// 			"-flex-between",
+// 			"-fb"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Flex Center": {
+// 		"body": [
+// 			"display: flex;",
+// 			"align-items: center;",
+// 			"justify-content: center;$0"
+// 		],
+// 		"prefix": [
+// 			"-flex-center",
+// 			"-fc"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Font Size": {
+// 		"body": "font-size: clamp(0.75rem, 2vw, 1rem);$0",
+// 		"prefix": [
+// 			"-font-size",
+// 			"-fs"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Font Size - 1": {
+// 		"body": "font-size: clamp(1rem, 4vw, 1.5rem);$0",
+// 		"prefix": [
+// 			"-font-size-1",
+// 			"-fs1"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Font Size - 2": {
+// 		"body": "font-size: clamp(1.5rem, 6vw, 2.5rem);$0",
+// 		"prefix": [
+// 			"-font-size-2",
+// 			"-fs2"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Font Size - 3": {
+// 		"body": "font-size: clamp(2rem, 9vw, 3.5rem);$0",
+// 		"prefix": [
+// 			"-font-size-3",
+// 			"-fs3"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Full - Height": {
+// 		"body": "height: 100%;$0",
+// 		"prefix": [
+// 			"-full-height",
+// 			"-hf"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Full - Size": {
+// 		"body": "width: 100%;\nheight: 100%;$0",
+// 		"prefix": [
+// 			"-full-size",
+// 			"-sf"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Full - Width": {
+// 		"body": "width: 100%;$0",
+// 		"prefix": [
+// 			"-full-width",
+// 			"-wf"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Keyframe - Blur Scroll": {
+// 		"body": [
+// 			"@keyframes blur {",
+// 			"\tto {",
+// 			"\t\tbackground: #0000004d;",
+// 			"\t\tbox-shadow: 0 5px 50px -5px #0000001a, 0 0 0 1px #0000004d;",
+// 			"\t\tbackdrop-filter: blur(10px);",
+// 			"\t\t-webkit-backdrop-filter: blur(10px);",
+// 			"\t}",
+// 			"}"
+// 		],
+// 		"prefix": [
+// 			"-keyframe-blur",
+// 			"-kb"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Keyframe - Bounce": {
+// 		"body": [
+// 			"@keyframes bounce {",
+// 			"\t0%, 100% {",
+// 			"\t\ttransform: translateY(-25%);",
+// 			"\t\tanimation-timing-function: cubic-bezier(0.8, 0, 1, 1);",
+// 			"\t}",
+// 			"\t50% {",
+// 			"\t\ttransform: translateY(0);",
+// 			"\t\tanimation-timing-function: cubic-bezier(0, 0, 0.2, 1);",
+// 			"\t}",
+// 			"}"
+// 		],
+// 		"prefix": [
+// 			"-keyframe-bounce",
+// 			"-kb"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Keyframe - Ping": {
+// 		"body": [
+// 			"@keyframes ping {",
+// 			"\t75%, 100% {",
+// 			"\t\ttransform: scale(2);",
+// 			"\t\topacity: 0;",
+// 			"\t}",
+// 			"}"
+// 		],
+// 		"prefix": [
+// 			"-keyframe-ping",
+// 			"-kp"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Keyframe - Pulse": {
+// 		"body": [
+// 			"@keyframes pulse {",
+// 			"\t0%, 100% {",
+// 			"\t\topacity: 1;",
+// 			"\t}",
+// 			"\t50% {",
+// 			"\t\topacity: 0.5;",
+// 			"\t}",
+// 			"}"
+// 		],
+// 		"prefix": [
+// 			"-keyframe-pulse",
+// 			"-kp"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Keyframe - Spin": {
+// 		"body": [
+// 			"@keyframes spin {",
+// 			"\tfrom {",
+// 			"\t\ttransform: rotate(0deg);",
+// 			"\t}",
+// 			"\tto {",
+// 			"\t\ttransform: rotate(360deg);",
+// 			"\t}",
+// 			"}"
+// 		],
+// 		"prefix": [
+// 			"-keyframe-spin",
+// 			"-ks"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Line Clamp": {
+// 		"body": "overflow: hidden;\ndisplay: -webkit-box;\nline-clamp: ${1:1};\n-webkit-box-orient: vertical;\n-webkit-line-clamp: $1;$0",
+// 		"prefix": [
+// 			"-line-clamp",
+// 			"-lc"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Media Query": {
+// 		"body": "@media (width > ${1|480px,768px,1024px,1280px,1440px,1920px|}) {\n\t${TM_SELECTED_TEXT}$0\n}",
+// 		"prefix": "-mq",
+// 		"scope": "css"
+// 	},
+// 	"Reset": {
+// 		"body": "*, ::before, ::after {\n\tbox-sizing: border-box;\n\tborder-width: 0;\n\tborder-style: solid;\n\tborder-color: currentColor;\n}\n\nhtml, :host {\n\tline-height: 1.5;\n\t-webkit-text-size-adjust: 100%;\n\t-moz-tab-size: 4;\n\ttab-size: 4;\n\tfont-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';\n\tfont-feature-settings: normal;\n\tfont-variation-settings: normal;\n\t-webkit-tap-highlight-color: transparent;\n}\n\nbody {\n\tmargin: 0;\n\tline-height: inherit;\n}\n\nhr {\n\theight: 0;\n\tcolor: inherit;\n\tborder-top-width: 1px;\n}\n\nabbr:where([title]) {\n\ttext-decoration: underline dotted;\n}\n\nh1, h2, h3, h4, h5, h6 {\n\tfont-size: inherit;\n\tfont-weight: inherit;\n}\n\na {\n\tcolor: inherit;\n\ttext-decoration: inherit;\n}\n\nb, strong {\n\tfont-weight: bolder;\n}\n\ncode, kbd, samp, pre {\n\tfont-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;\n\tfont-feature-settings: normal;\n\tfont-variation-settings: normal;\n\tfont-size: 1em;\n}\n\nsmall {\n\tfont-size: 80%;\n}\n\nsub, sup {\n\tfont-size: 75%;\n\tline-height: 0;\n\tposition: relative;\n\tvertical-align: baseline;\n}\n\nsub {\n\tbottom: -0.25em;\n}\n\nsup {\n\ttop: -0.5em;\n}\n\ntable {\n\ttext-indent: 0;\n\tborder-color: inherit;\n\tborder-collapse: collapse;\n}\n\nbutton, input, optgroup, select, textarea {\n\tfont-family: inherit;\n\tfont-feature-settings: inherit;\n\tfont-variation-settings: inherit;\n\tfont-size: 100%;\n\tfont-weight: inherit;\n\tline-height: inherit;\n\tletter-spacing: inherit;\n\tcolor: inherit;\n\tmargin: 0;\n\tpadding: 0;\n}\n\nbutton, select {\n\ttext-transform: none;\n}\n\nbutton, input:where([type='button']), input:where([type='reset']), input:where([type='submit']) {\n\t-webkit-appearance: button;\n\tappearance: button;\n\tbackground-color: transparent;\n\tbackground-image: none;\n}\n\n:-moz-focusring {\n\toutline: auto;\n}\n\n:-moz-ui-invalid {\n\tbox-shadow: none;\n}\n\nprogress {\n\tvertical-align: baseline;\n}\n\n::-webkit-inner-spin-button, ::-webkit-outer-spin-button {\n\theight: auto;\n}\n\n[type='search'] {\n\t-webkit-appearance: textfield;\n\tappearance: textfield;\n\toutline-offset: -2px;\n}\n\n::-webkit-search-decoration {\n\t-webkit-appearance: none;\n}\n\n::-webkit-file-upload-button {\n\t-webkit-appearance: button;\n\tfont: inherit;\n}\n\nsummary {\n\tdisplay: list-item;\n}\n\nblockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {\n\tmargin: 0;\n}\n\nfieldset {\n\tmargin: 0;\n\tpadding: 0;\n}\n\nlegend {\n\tpadding: 0;\n}\n\nol, ul, menu {\n\tlist-style: none;\n\tmargin: 0;\n\tpadding: 0;\n}\n\ndialog {\n\tpadding: 0;\n}\n\ntextarea {\n\tresize: vertical;\n}\n\ninput::placeholder, textarea::placeholder {\n\topacity: 1;\n\tcolor: #9ca3af;\n}\n\nbutton, [role='button'] {\n\tcursor: pointer;\n}\n\n:disabled {\n\tcursor: default;\n}\n\nimg, svg, video, canvas, audio, iframe, embed, object {\n\tdisplay: block;\n}\n\nimg, video {\n\tmax-width: 100%;\n\theight: auto;\n}\n\n[hidden]:where(:not([hidden='until-found'])) {\n\tdisplay: none;\n}\n",
+// 		"prefix": "-reset",
+// 		"scope": "css"
+// 	},
+// 	"Screen Reader Only": {
+// 		"body": "position: absolute;\nwidth: 1px;\nheight: 1px;\npadding: 0;\nmargin: -1px;\noverflow: hidden;\nclip: rect(0, 0, 0, 0);\nwhite-space: nowrap;\nborder-width: 0;$0",
+// 		"prefix": "-sr-only",
+// 		"scope": "css"
+// 	},
+// 	"Size": {
+// 		"body": "width: ${1:1}${2:px};\nheight: ${1}$2;$0",
+// 		"prefix": "-size",
+// 		"scope": "css"
+// 	},
+// 	"Space - X": {
+// 		"body": "${1:*} + $1 {\n\tmargin-left: ${2:8px};\n}\n$0",
+// 		"prefix": [
+// 			"-space-x",
+// 			"-sx"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Space - Y": {
+// 		"body": "${1:*} + $1 {\n\tmargin-top: ${2:8px};\n}\n$0",
+// 		"prefix": [
+// 			"-space-y",
+// 			"-sy"
+// 		],
+// 		"scope": "css"
+// 	},
+// 	"Truncate": {
+// 		"body": "overflow: hidden;\ntext-overflow: ellipsis;\nwhite-space: nowrap;$0",
+// 		"prefix": "-truncate",
+// 		"scope": "css"
+// 	}
+// }

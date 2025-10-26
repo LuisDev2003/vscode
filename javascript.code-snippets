@@ -1,0 +1,108 @@
+// "Dividing Line": {
+// 	"body": "\n// ----------------------------------------------------------------------\n",
+// 	"prefix": "ln",
+// 	"scope": "javascript,javascriptreact,typescript,typescriptreact"
+// },
+// "Local Storage - Get": {
+// 	"body": [
+// 		"function getLocalStorage(key) {",
+// 		"\ttry {",
+// 		"\t\tconst storedData = localStorage.getItem(key);",
+// 		"\t\treturn storedData ? JSON.parse(storedData) : null;",
+// 		"\t} catch (error) {",
+// 		"\t\tconsole.error(`Error retrieving data from localStorage for key \\\"\\${key}\\\":`, error);",
+// 		"\t\treturn null;",
+// 		"\t}",
+// 		"}"
+// 	],
+// 	"prefix": "local-storage-get",
+// 	"scope": "javascript,javascriptreact,typescript,typescriptreact"
+// },
+// "Local Storage - Remove": {
+// 	"body": [
+// 		"function removeLocalStorage(key) {",
+// 		"\ttry {",
+// 		"\t\tlocalStorage.removeItem(key);",
+// 		"\t\treturn true;",
+// 		"\t} catch (error) {",
+// 		"\t\tconsole.error(`Error removing data from localStorage for key \\\"\\${key}\\\":`, error);",
+// 		"\t\treturn false;",
+// 		"\t}",
+// 		"}"
+// 	],
+// 	"prefix": "local-storage-remove",
+// 	"scope": "javascript,javascriptreact,typescript,typescriptreact"
+// },
+// "Local Storage - Set": {
+// 	"body": [
+// 		"function setLocalStorage(key, data) {",
+// 		"\ttry {",
+// 		"\t\tlocalStorage.setItem(key, JSON.stringify(data));",
+// 		"\t\treturn true;",
+// 		"\t} catch (error) {",
+// 		"\t\tconsole.error(`Error setting data in localStorage for key \\\"\\${key}\\\":`, error);",
+// 		"\t\treturn false;",
+// 		"\t}",
+// 		"}"
+// 	],
+// 	"prefix": "local-storage-set",
+// 	"scope": "javascript,javascriptreact,typescript,typescriptreact"
+// },
+// "Query Selector": {
+// 	"body": "const $ = (element) => document.querySelector(element);$0",
+// 	"prefix": "query-selector",
+// 	"scope": "javascript,javascriptreact,typescript,typescriptreact"
+// },
+// "Query Selector - All": {
+// 	"body": "const $$ = (element) => document.querySelectorAll(element);$0",
+// 	"prefix": "query-selector-all",
+// 	"scope": "javascript,javascriptreact,typescript,typescriptreact"
+// },
+// "Query Selector - Scope": {
+// 	"body": "const $ = (element, scope = document) => scope.querySelector(element);$0",
+// 	"prefix": "query-selector-scope",
+// 	"scope": "javascript,javascriptreact,typescript,typescriptreact"
+// },
+// "Random": {
+// 	"body": [
+// 		"const random = (min, max) => {",
+// 		"\treturn Math.floor(Math.random() * (max - min + 1)) + min;",
+// 		"};"
+// 	],
+// 	"prefix": "random",
+// 	"scope": "javascript,javascriptreact,typescript,typescriptreact"
+// },
+// "Region": {
+// 	"body": "\n//#region ${1|Components,Types,Functions,Styles|}\n\n$0${TM_SELECTED_TEXT}\n\n//#endregion\n",
+// 	"prefix": "reg",
+// 	"scope": "javascript,javascriptreact,typescript,typescriptreact"
+// },
+// "Sanitize": {
+// 	"body": [
+// 		"const sanitize = (input) => {",
+// 		"\tconst encodedCharacters = {",
+// 		"\t\t'&': '&amp;',",
+// 		"\t\t'<': '&lt;',",
+// 		"\t\t'>': '&gt;',",
+// 		"\t\t'\"': '&quot;',",
+// 		"\t\t'\"': '&#x27;',",
+// 		"\t\t'/': '&#x2F;'",
+// 		"\t};",
+// 		"",
+// 		"\treturn input.replace(/[&<>\"']/g, (match) => encodedCharacters[match]);",
+// 		"};"
+// 	],
+// 	"prefix": "sanitize",
+// 	"scope": "javascript,javascriptreact,typescript,typescriptreact"
+// },
+// "Util - Capitalize": {
+// 	"body": "const capitalize = (text) => {\n\treturn text.toLowerCase().replace(/(^|s)w/g, (c) => c.toUpperCase());\n};\n",
+// 	"prefix": "-util-capitalize",
+// 	"scope": "javascript,javascriptreact,typescript,typescriptreact"
+// },
+// "Util - Local Storage - Clear": {
+// 	"body": "function clearLocalStorage() {\n\ttry {\n\t\tlocalStorage.clear();\n\t\treturn true;\n\t} catch (error) {\n\t\tconsole.error(\"Error clearing localStorage:\", error);\n\t\treturn false;\n\t}\n}\n",
+// 	"prefix": "-lsc",
+// 	"scope": "javascript,javascriptreact,typescript,typescriptreact"
+// }
+{}

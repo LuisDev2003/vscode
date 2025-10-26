@@ -1,0 +1,251 @@
+{
+	"Arrow Function": {
+		"body": "const $1 = ($2) => {\n\t$3\n};\n",
+		"prefix": [
+			"af",
+			"arrow-function"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Arrow Function Async": {
+		"body": "const $1 = async ($2) => {\n\t$3\n};\n",
+		"prefix": [
+			"afa",
+			"arrow-function-async"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Arrow Function Async Export": {
+		"body": "export const $1 = async ($2) => {\n\t$3\n};\n",
+		"prefix": [
+			"afae",
+			"arrow-function-async-export"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Arrow Function Export": {
+		"body": "export const $1 = ($2) => {\n\t$3\n};\n",
+		"prefix": [
+			"afe",
+			"arrow-function-export"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Console Error": {
+		"body": "console.error($1);",
+		"prefix": [
+			"ce",
+			"console-error"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Console Log": {
+		"body": "console.log($1);",
+		"prefix": [
+			"cl",
+			"console-log"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Console Warn": {
+		"body": "console.warn($1);",
+		"prefix": [
+			"cw",
+			"console-warn"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Declare Constant": {
+		"body": "const $1 = $2;",
+		"prefix": [
+			"dc",
+			"declare-constant"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Destructure Array": {
+		"body": "const [ $2 ] = $1;",
+		"prefix": [
+			"da",
+			"destructure-array"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Destructure Object": {
+		"body": "const { $2 } = $1;",
+		"prefix": [
+			"do",
+			"destructure-object"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Export All": {
+		"body": "export * from \"$1\";",
+		"prefix": [
+			"ea",
+			"export-all"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Export Destructure": {
+		"body": "export { $2 } from \"$1\";",
+		"prefix": [
+			"ed",
+			"export-destructure"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"FileName": {
+		"body": "${TM_FILENAME_BASE}",
+		"prefix": [
+			"filename"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"FileName Hook": {
+		"body": "use${1:${TM_FILENAME_BASE/^(use[\\s._-]*)?([a-zA-Z0-9])|[\\s._-]+([a-zA-Z0-9])/${2:/upcase}${3:/upcase}/g}}$0",
+		"prefix": [
+			"fh",
+			"filename-hook"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"FileName Pascal Case": {
+		"body": "${1:${TM_FILENAME_BASE/(?:^|[\\s._-]+)([a-zA-Z0-9])(?=[a-zA-Z0-9]*)/${1:/upcase}/g}}",
+		"prefix": [
+			"fpc",
+			"filename-pascal-case"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Function": {
+		"body": "function $1($2) {\n\t$3\n}\n",
+		"prefix": [
+			"f",
+			"function"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Function Async": {
+		"body": "async function $1($2) {\n\t$3\n}\n",
+		"prefix": [
+			"fa",
+			"function-async"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Function Async Export": {
+		"body": "export async function $1($2) {\n\t$3\n}\n",
+		"prefix": [
+			"fae",
+			"function-async-export"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Function Export": {
+		"body": "export function $1($2) {\n\t$3\n}\n",
+		"prefix": [
+			"fe",
+			"function-export"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Import": {
+		"body": "import ${2:M} from \"$1\";",
+		"prefix": [
+			"i",
+			"import"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Import \"class-variance-authority\"": {
+		"body": "import { $1 } from \"class-variance-authority\";",
+		"prefix": [
+			"import-class-variance-authority"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Import \"next\"": {
+		"body": "import { $1 } from \"next\";",
+		"prefix": [
+			"import-next"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Import \"react\"": {
+		"body": "import { $1 } from \"react\";",
+		"prefix": [
+			"import-react"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Import All": {
+		"body": "import * as ${2:M} from \"$1\";",
+		"prefix": [
+			"ia",
+			"import-all"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Import Destructure": {
+		"body": "import { $2 } from \"$1\";",
+		"prefix": [
+			"id",
+			"import-destructure"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Try Catch": {
+		"body": "try {\n\t$0\n} catch (err) {\n\t${1:console.error(\"${TM_FILENAME_BASE}\", err);}\n}",
+		"prefix": [
+			"tc",
+			"try-catch"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Try Catch Finally": {
+		"body": "try {\n\t$0\n} catch (err) {\n\t${1:console.error(\"${TM_FILENAME_BASE}\", err);}\n} finally {\n\t$2\n}",
+		"prefix": [
+			"tcf",
+			"try-catch-finally"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Use Client": {
+		"body": "\"use client\";\n",
+		"prefix": [
+			"use-client"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Use Server": {
+		"body": "\"use server\";\n",
+		"prefix": [
+			"use-server"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Use Strict": {
+		"body": "\"use strict\";\n",
+		"prefix": [
+			"use-strict"
+		],
+		"scope": "javascript"
+	},
+	"Comment Header": {
+		"body": "/* ****************************************\n * $1\n * ****************************************/\n",
+		"prefix": [
+			"ch",
+			"comment-header"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Comment Divider": {
+		"body": "\n// ------------------------------------------------------------------\n",
+		"prefix": [
+			"cd",
+			"comment-divider"
+		],
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	}
+}
